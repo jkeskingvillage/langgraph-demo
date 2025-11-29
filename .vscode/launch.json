@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: LangChain Agent Debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/agent.py", // Replace with the path to your main agent script
+            "console": "integratedTerminal",
+            "justMyCode": true, // Set to false if you need to step into LangChain library code
+            "env": {
+                // Optional: Add any environment variables your agent needs, e.g., API keys
+                // "LANGCHAIN_TRACING_V2": "true", // Enable LangSmith tracing
+                // "LANGCHAIN_API_KEY": "your_langsmith_api_key"
+            },
+            "args": [
+                //"--interactive",
+                //"--question",
+                //"What is 8 divided by 2?"
+                //"--file",
+                //<FILE_PATH>,
+                "--evaluation",
+                "--num_problems",
+                "6"
+            ]
+        }
+    ]
+}

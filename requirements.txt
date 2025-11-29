@@ -1,0 +1,14 @@
+langchain==0.2.16
+langchain-community==0.2.12
+langchain-core==0.2.38
+langchain-ollama
+weave
+ollama
+python-dotenv
+pydantic
+pandas
+numpy
+wandb
+langsmith
+langgraph
+bs4
